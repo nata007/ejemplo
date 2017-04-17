@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ejemplo.ejemplo.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="365dp"
+        android:layout_height="587dp"
+        android:background="@android:color/background_light"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/fondo_login"
+            android:id="@+id/relativeLayout2">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPersonName"
+                android:layout_below="@+id/editText5"
+                android:layout_alignStart="@+id/editText5"
+                android:layout_marginTop="18dp"
+                android:layout_alignEnd="@+id/editText5" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText6"
+                android:layout_alignStart="@+id/editText6"
+                android:layout_below="@+id/editText6"
+                android:layout_marginTop="24dp"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="13dp"
+                android:onClick="onAceptar"
+                android:text="Aceptar"
+                android:textColor="@android:color/background_light" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
